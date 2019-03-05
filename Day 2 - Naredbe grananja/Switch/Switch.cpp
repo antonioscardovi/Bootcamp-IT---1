@@ -51,10 +51,10 @@ int main()
 	case 1:
 		cout << "Upisi broj: ";
 		cin >> y;
-		cout << "Ispis: " << y;
+		cout << "Ispis: " << y << endl;
 		break;
 	case 2:
-		cout << "Dobar dan";
+		cout << "Dobar dan" << endl;
 		break;
 	case 3:
 		cout << "Exit";
@@ -67,14 +67,24 @@ int main()
 	// ZADATAK 3
 	int stih = 0;
 
-	cout << "Odaberi stih(1-7): ";
-
+	cout << "Odaberi stih(1-6): ";
+	cin >> stih;
 
 	switch (stih) {
 	case 1:
-		cout << "";
+		cout << "Sew your skeleton to mine\n";
+	case 2:
+		cout << "I'm no good on my own\n";
+	case 3:
+		cout << "Stitch yourself to either side of me so I will never be alone\n";
+	case 4:
+		cout << "We mend our past mistakes\n";
+	case 5:
+		cout << "As a symbol that we've grown\n";
+	case 6:
+		cout << "So we no longer place our weight on top of broken bones\n";
 	}
-		
+	// KRAJ  // nismo koristili break; tako da se ispisuje sve poslje broja koji odaberemo
 
 }
 
