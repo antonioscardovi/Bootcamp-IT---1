@@ -65,7 +65,15 @@ int main()
 
 
 	// ZADATAK 3
+	int stih = 0;
 
+	cout << "Odaberi stih(1-7): ";
+
+
+	switch (stih) {
+	case 1:
+		cout << "";
+	}
 		
 
 }
