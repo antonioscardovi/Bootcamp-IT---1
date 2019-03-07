@@ -151,16 +151,44 @@ int main()
 
 
 	// OBRNUTO
-	/*int N;
-	cin >> N;
+	//int N;
+	//cin >> N;
 
-	for (int i = N; i >= 1; i--) {
-		cout << i << endl;
-	}*/
+	//for (int i = N; i >= 1; i--) {
+	//	cout << i << endl;
+	//}
 
 	// PARNI
-	int broj;
+	/*int broj = 0;
 	cin >> broj;
+
+	for (int i = 1; i <= broj; i++) {
+		if (i % 2 == 0) {
+			cout << i << endl;
+		}
+		else {
+			continue;
+		}
+	}*/
+
+
+	// PUDING
+	/*int novac[6], ostatak;
+
+	for (int i = 0; i <= 5; i++) {
+		cin >> novac[i];
+	}
+
+
+	ostatak = novac[0] - (novac[1] + novac[2] + novac[3])/2;
+
+	if (ostatak < (novac[4])/2) {
+		cout << "PUDING OD VANILIJE" << endl;
+	}
+	else {
+		cout << "PUDING OD COKOLADE" << endl;
+	}*/
+
 } 
 
 /* TEMPLATE
