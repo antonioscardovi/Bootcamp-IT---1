@@ -7,14 +7,14 @@ using namespace std;
 
 int main()
 {
-
+	/*
 	for (int i = 1; i <= 10; i++) {
 		for (int j = 1; j <= 10; j++) {
 			cout << j * i << " ";
 		}
 		cout << endl;
 	}
-
+	*/
 
 	/*
 	// STANDARDNA DEVIJACIJA
@@ -87,24 +87,81 @@ int main()
 
 	cin >> R;
 
-	for (int i = 1; i <= a, i++) {
-		cin >> a;
-	}*/
-
-	int a, sum = 0;
-
-	do {
+	for (int i = 1; i <= R; i++) {
 		cin >> a;
 		sum += a;
-	} while (a != x);
+	}
+	cout << sum;*/
 
 
-	for(a = cin >> a; )
+	// UMNOZAKNIZA
+	/*int R, a, sum = 1;
 
-	cout << sum;
+	cin >> R;
 
+	for (int i = 1; i <= R; i++) {
+		cin >> a;
+		sum *= a;
+	}
+	cout << sum;*/
+
+
+	// PROSJEK1
+	
+	/*int a = 1, count = -1;
+	float pro;
+	
+	for (pro = 0; a != 0; count++) {
+		cin >> a;
+		if (a == 1) {
+			cout << 1;
+			return 0;
+		}
+		pro += a;
+	}
+	cout << setprecision(2) << fixed << pro / count;*/
+	
+
+
+	// PROSTI
+	/*int n, i;
+	bool prost = true;
+	cin >> n;
+
+	for (i = 2; i <= sqrt(n / 2); ++i)
+	{
+		if (n % i == 0)
+		{
+			prost = false;
+			break;
+		}
+	}
+	if (prost)
+		cout << "prost";
+	else
+		cout << "nije prost";*/
+
+	// PRVIH N
+	/*int N;
+	cin >> N;
+
+	for (int i = 1; i <= N; i++) {
+		cout << i << endl;
+	}*/
+
+
+	// OBRNUTO
+	/*int N;
+	cin >> N;
+
+	for (int i = N; i >= 1; i--) {
+		cout << i << endl;
+	}*/
+
+	// PARNI
+	int broj;
+	cin >> broj;
 } 
-
 
 /* TEMPLATE
 #include <iostream>
