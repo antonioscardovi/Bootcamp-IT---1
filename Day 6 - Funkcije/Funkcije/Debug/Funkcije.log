@@ -1,0 +1,7 @@
+﻿  Funkcije.cpp
+c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\day 6 - funkcije\funkcije\funkcije.cpp(72): error C2660: 'izbornik': function does not take 0 arguments
+  c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\day 6 - funkcije\funkcije\funkcije.cpp(23): note: see declaration of 'izbornik'
+c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\day 6 - funkcije\funkcije\funkcije.cpp(167): error C2660: 'zbroj': function does not take 0 arguments
+  c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\day 6 - funkcije\funkcije\funkcije.cpp(119): note: see declaration of 'zbroj'
+c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\day 6 - funkcije\funkcije\funkcije.cpp(170): error C2660: 'check_password': function does not take 0 arguments
+  c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\day 6 - funkcije\funkcije\funkcije.cpp(132): note: see declaration of 'check_password'
