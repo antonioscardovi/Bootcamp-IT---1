@@ -28,6 +28,7 @@ int main()
 			unos(polje, znak);
 
 
+			// Provjera pobjede
 			if (x > 4) {
 				if (polje[0] == polje[1] && polje[1] == polje[2]) {
 					cout << "Pobjedio je: " << polje[0] << endl;
@@ -112,7 +113,7 @@ int main()
 				else {
 					cout << "Nerjeseno." << endl;
 				}
-			}
+			}						
 
 		}
 
