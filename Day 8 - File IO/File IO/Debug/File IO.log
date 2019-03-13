@@ -1,0 +1,3 @@
+﻿  File IO.cpp
+c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\day 8 - file io\file io\file io.cpp(45): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  File IO.vcxproj -> C:\Users\UC-M03\Documents\Antonio Scardovi\Bootcamp IT - 1\Day 8 - File IO\File IO\Debug\File IO.exe

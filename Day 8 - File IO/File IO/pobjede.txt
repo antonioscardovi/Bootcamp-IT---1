@@ -1,0 +1,14 @@
+Petar 4
+Petar 6
+Petar 5
+Marko 6
+Marko 6
+Marko 6
+Marko 6
+Petar 6
+Petar 4
+Petar 3
+Rezultat:
+Marko - 4
+Petar - 6
+Pobjednik: Petar
