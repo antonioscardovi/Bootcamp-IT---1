@@ -1,0 +1,4 @@
+﻿  Day 11 - Strukture.cpp
+c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\day 11 - strukture\day 11 - strukture.cpp(18): warning C4101: 'odg': unreferenced local variable
+c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\day 11 - strukture\day 11 - strukture.cpp(35): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Day 11 - Strukture.vcxproj -> C:\Users\UC-M03\Documents\Antonio Scardovi\Bootcamp IT - 1\Day 11 - Strukture\Debug\Day 11 - Strukture.exe
