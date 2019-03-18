@@ -26,50 +26,37 @@ int main()
 	izbornik();
 	cin >> unos;
 
+
 	switch (unos) {
 	case 1:
 		s.push_back(novi_unos());
 		break;
-	case 2:
-		brisanje();
-		break;
-	case 3:
-		izmjena();
-		break;
+	//case 2:
+	//	brisanje();
+	//	break;
+	//case 3:
+	//	izmjena();
+	//	break;
 	case 4:
 		prikaz();
 		break;
-	case 5:
-		prosjek();
-		break;
-	case 6:
-		najbolji();
-		break;
-	case 7:
-		najgori();
-		break;
-	case 8:
-		prikaz_ID();
-		break;
-	case 9:
-		sort_uspjeh();
-		break;
-	}
-
+	//case 5:
+	//	prosjek();
+	//	break;
+	//case 6:
+	//	najbolji();
+	//	break;
+	//case 7:
+	//	najgori();
+	//	break;
+	//case 8:
+	//	prikaz_ID();
+	//	break;
+	//case 9:
+	//	sort_uspjeh();
+	//	break;
+	//}
 	
-	// Izmjena podataka
-
-	// Prikaz svih studenata
-
-	// Prikaz prosjeka po ispitu 
-
-	// Prikaz najboljeg
-
-	// Prikaz najgoreg
-
-	// Prikaz po ID-u
-
-	// Sortiranje po ukupnom uspjehu
 }
 
 void izbornik() {
@@ -110,3 +97,22 @@ Student novi_unos() {
 void brisanje() {
 	
 }
+
+// Izmjena podataka
+
+// Prikaz svih studenata
+void prikaz() {
+	for (int i = 0; i < p.size(); i++) {
+		cout << p[i].ID << " " << p[i].ime << " " << p[i].prezime << " ";
+	}
+}
+
+// Prikaz prosjeka po ispitu 
+
+// Prikaz najboljeg
+
+// Prikaz najgoreg
+
+// Prikaz po ID-u
+
+// Sortiranje po ukupnom uspjehu
