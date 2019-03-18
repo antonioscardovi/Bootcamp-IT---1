@@ -28,6 +28,7 @@ int main()
 			unos(polje, znak);
 
 
+			// Provjera pobjede
 			if (x > 4) {
 				pobjeda(polje[9], pobX, pobO);
 				if (pobjeda) {
@@ -37,6 +38,8 @@ int main()
 					cout << "Nerjesno.";
 				}
 			}
+			}						
+
 		}
 
 		for (int i = 1; i <= 9; i++) {
