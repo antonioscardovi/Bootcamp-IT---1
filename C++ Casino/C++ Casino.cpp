@@ -24,6 +24,8 @@ void buy_chips(Login &x, int &chips);
 void cash_out(Login &x, int &chips);
 void game_menu(Login &x, int &entry, int &chips);
 void dices(Login &x, int &chips);
+void slots(Login &x, int &chips);
+
 
 int main()
 {
@@ -36,12 +38,13 @@ int main()
 void start(Login &x) {
 	cout << "\t\t//////////////////////////////////////////" << endl;
 	cout << "\t\t------------------------------------------";
-	cout << "\n\n\n\t\t\tWelcome to C++ Casino!!!\n\n\n";
+	cout << "\n\t*" << endl;
+	cout << "\n\n\n\t\t\t\tC++ CASINO!!!\n\n\n";
 	cout << "\t\t------------------------------------------" << endl;
 	cout << "\t\t//////////////////////////////////////////" << endl;
 	cout << "\n\nEnter your name: ";
 	cin >> x.name;
-	cout << "Enter your cash amount: ";
+	cout << "Enter your cash: ";
 	cin >> x.money;
 	if (x.money <= 0) {
 		int count = 0;
@@ -175,7 +178,7 @@ void dices(Login &x, int &chips) {
 
 
 	chip_check(x, bet, chips);
-	/*if (bet > chips) {
+	if (bet > chips) {
 		int count = 0;
 		string buyleave;
 		do {
@@ -194,7 +197,7 @@ void dices(Login &x, int &chips) {
 					main();
 				}
 			}
-		} while (bet > chips);*/
+		} while (bet > chips);
 
 	}
 
@@ -271,7 +274,7 @@ void slots(Login &x, int &chips) {
 	cout << "Bet: ";
 	cin >> bet;
 
-	srand(time(0));
+	srand((unsigned int)time(0));
 
 	do {
 		for (int i = 0; i < 3; i++) {

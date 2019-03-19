@@ -1,9 +1,13 @@
-Antonio 3
-Antonio 5
-Antonio 3
+Comp 4
+Comp 6
+Toni 4
+Comp 5
+Toni 6
+Toni 5
+Comp 6
 Comp 3
-Antonio 4
+Comp 6
 Score:
-Comp - 1
-Antonio - 4
-Winner: Antonio
+Comp - 6
+Toni - 3
+Winner: Comp
