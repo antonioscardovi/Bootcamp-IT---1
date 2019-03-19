@@ -1,0 +1,3 @@
+﻿  Slot Machine.cpp
+c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\slot machine\slot machine.cpp(12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Slot Machine.vcxproj -> C:\Users\UC-M03\Documents\Antonio Scardovi\Bootcamp IT - 1\Slot Machine\Debug\Slot Machine.exe
