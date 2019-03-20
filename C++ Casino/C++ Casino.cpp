@@ -38,7 +38,6 @@ int main()
 void start(Login &x) {
 	cout << "\t\t//////////////////////////////////////////" << endl;
 	cout << "\t\t------------------------------------------";
-	cout << "\n\t*" << endl;
 	cout << "\n\n\n\t\t\t\tC++ CASINO!!!\n\n\n";
 	cout << "\t\t------------------------------------------" << endl;
 	cout << "\t\t//////////////////////////////////////////" << endl;
@@ -170,12 +169,8 @@ void dices(Login &x, int &chips) {
 	int comp = 0, player = 0;
 	int playcount, bet;
 
-	ofstream output;
-	output.open("pobjede.txt", ios::out);
-
 	cout << "Bet: ";
 	cin >> bet;
-
 
 	chip_check(x, bet, chips);
 	if (bet > chips) {
@@ -219,21 +214,17 @@ void dices(Login &x, int &chips) {
 		cout << "Computer: " << dice1 << endl;
 		cout << x.name << ": " << dice2 << endl;
 
-		string izlaz1 = "Comp " + to_string(dice1) + "\n";
-		string izlaz2 = x.name + " " + to_string(dice2) + "\n";
 
 		if (dice1 > dice2) {
 			cout << "You Lose!" << endl;
 			chips -= bet;
 			cout << "-" << bet << " Chips." << endl;
-			output << izlaz1;
 			comp++;
 		}
 		else if (dice1 < dice2) {
 			cout << "Win!!! - " << x.name << endl;
 			chips += bet;
 			cout << "+" << bet << " Chips" << endl;
-			output << izlaz2;
 			player++;
 		}
 		else if (dice1 == dice2) {
@@ -247,22 +238,6 @@ void dices(Login &x, int &chips) {
 	system("cls");
 	cout << "You have: " << chips << " Chips." << endl;
 
-	string izlaz3 = string("Score:\n") + "Comp - " + to_string(comp) + "\n";
-	string izlaz4 = x.name +  " - " + to_string(player) + "\n";
-
-	output << izlaz3 << izlaz4;
-
-	if (comp > player) {
-		output << "Winner: " << "Comp";
-	}
-	else if (player > comp) {
-		output << "Winner: " << x.name;
-	}
-	else if (player == comp) {
-		output << "It's a Draw";
-	}
-
-	output.close();
 }
 // Slots
 void slots(Login &x, int &chips) {
@@ -343,6 +318,9 @@ void the_game(Login &login, int &entry, int &chips) {
 			break;
 		case 5:
 			exit(0);
+			break;
+		default:
+			cout << "Wrong button.";
 			break;
 		}
 	} while (entry != 5);
