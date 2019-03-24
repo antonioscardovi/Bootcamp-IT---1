@@ -11,9 +11,6 @@ struct Login {
 	int money;
 };
 
-struct Highscore {
-
-};
 
 void the_game(Login &login, int &entry, int &chips);
 void start(Login &x);
@@ -173,28 +170,7 @@ void dices(Login &x, int &chips) {
 	cin >> bet;
 
 	chip_check(x, bet, chips);
-	if (bet > chips) {
-		int count = 0;
-		string buyleave;
-		do {
-			cout << "You don't have enough chips" << endl;
-			cout << "Bet: ";
-			cin >> bet;
-			count++;
-			if (count == 4) {
-				cout << "Buy more chips or leave? - ";
-				cin >> buyleave;
-				if (buyleave == "buy") {
-					buy_chips(x, chips);
-				}
-				else {
-					system("cls");
-					main();
-				}
-			}
-		} while (bet > chips);
-
-	}
+	
 
 	cout << "(1-100)Rounds: ";
 	cin >> playcount;
@@ -249,6 +225,8 @@ void slots(Login &x, int &chips) {
 	cout << "Bet: ";
 	cin >> bet;
 
+	chip_check(x, bet, chips);
+
 	srand((unsigned int)time(0));
 
 	do {
@@ -294,6 +272,7 @@ void high_low(Login &x, int &chips) {
 }
 // High Score
 void high_score(Login &x, int &chips) {
+	int starting_state = chips;
 
 }
 // THE GAME
