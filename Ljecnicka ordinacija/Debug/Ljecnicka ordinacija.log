@@ -1,5 +1,11 @@
 ﻿  Ljecnicka ordinacija.cpp
 c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\ljecnicka ordinacija\ljecnicka ordinacija.cpp(111): warning C4018: '<': signed/unsigned mismatch
+c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\ljecnicka ordinacija\ljecnicka ordinacija.cpp(141): error C2661: 'std::vector<std::string,std::allocator<_Ty>>::push_back': no overloaded function takes 0 arguments
+          with
+          [
+              _Ty=std::string
+          ]
 c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\ljecnicka ordinacija\ljecnicka ordinacija.cpp(151): warning C4018: '<': signed/unsigned mismatch
 c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\ljecnicka ordinacija\ljecnicka ordinacija.cpp(160): warning C4018: '<': signed/unsigned mismatch
-  Ljecnicka ordinacija.vcxproj -> C:\Users\UC-M03\Documents\Antonio Scardovi\Bootcamp IT - 1\Ljecnicka ordinacija\Debug\Ljecnicka ordinacija.exe
+c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\ljecnicka ordinacija\ljecnicka ordinacija.cpp(184): warning C4018: '<': signed/unsigned mismatch
+c:\users\uc-m03\documents\antonio scardovi\bootcamp it - 1\ljecnicka ordinacija\ljecnicka ordinacija.cpp(187): warning C4018: '<': signed/unsigned mismatch

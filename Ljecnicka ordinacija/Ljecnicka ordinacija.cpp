@@ -31,14 +31,14 @@ void menu();
 void novi_pacijent(vector <Pacijent> &pacijent);
 void ispis_pacijenata(vector <Pacijent> pacijent);
 void spremanje(vector <Pacijent> pacijent);
-void mbo_sort(vector <Pacijent> pacijent, int velicina);
+void mbo_sort(vector <Pacijent> pacijent);
 bool search(vector <Pacijent> pacijent, int &mbo);
 
 
 int main()
 {
 	vector <Pacijent> pacijent;
-	Pacijent pacovi;
+	Pacijent pc;
 	int unos;
 	ifstream input;
 	input.open("pacijenti.txt");
@@ -47,9 +47,9 @@ int main()
 
 	while (input) {
 		getline(input, MBO);
-		pacovi.MBO = stoi(MBO);
-		getline(input, pacovi.ime);
-		getline(input, pacovi.prezime);
+		pc.MBO = stoi(MBO);
+		getline(input, pc.ime);
+		getline(input, pc.prezime);
 		vector <string> medicina;
 		do {
 			getline(input, lijek);
@@ -57,8 +57,8 @@ int main()
 				medicina.push_back(lijek);
 			}
 		} while (lijek != "-");
-		pacovi.lijekovi = medicina;
-		pacijent.push_back(pacovi);
+		pc.lijekovi = medicina;
+		pacijent.push_back(pc);
 		if (input.eof()) {
 			break;
 		}
@@ -137,8 +137,8 @@ void novi_pacijent(vector <Pacijent> &pacijent) {
 		cin >> p.ime;
 		cout << "Unesite prezime pacijenta: ";
 		cin >> p.prezime;
-		//cout << "Unesite ljekove: ";
-		//cin >> p.lijekovi.push_back();
+		cout << "Unesite ljekove: ";
+		cin >> p.lijekovi.push_back();
 		pacijent.push_back(p);
 		spremanje(pacijent);
 	}
@@ -149,7 +149,7 @@ void spremanje(vector <Pacijent> pacijent) {
 	output.open("pacijenti.txt", ios::out);
 	output << "MBO" << "\t" << "IME" << "\t" << "PREZIME" << "\t" << "LIJEKOVI" << endl;
 	for (int i = 0; i < pacijent.size(); i++) {
-		output << i << "\n" << pacijent[i].MBO << "\n" << pacijent[i].ime << "\n" << pacijent[i].prezime << "\n-" << endl;
+		output << "\n" << pacijent[i].MBO << "\n" << pacijent[i].ime << "\n" << pacijent[i].prezime << "\n-" << endl;
 	}
 	output.close();
 }
@@ -177,14 +177,14 @@ void pretraga_mbo(vector <Pacijent> pacijent) {
  }
 
 
-void mbo_sort(vector <Pacijent> pacijent, int velicina) {
+void mbo_sort(vector <Pacijent> pacijent) {
 	int min;
 	Pacijent temp;
 
-	for (int i = 0; i < velicina; i++) {
+	for (int i = 0; i < pacijent.size(); i++) {
 		min = i;
 
-		for (int j = 0; j < velicina; j++) {
+		for (int j = 0; j < pacijent.size(); j++) {
 			if (pacijent[j].MBO > pacijent[min].MBO) {
 				min = j;
 			}
