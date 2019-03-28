@@ -230,6 +230,7 @@ void slots(Login &x, int &chips) {
 	srand((unsigned int)time(0));
 
 	do {
+		
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
 				slot[i][j] = rand() % 3;
@@ -238,6 +239,7 @@ void slots(Login &x, int &chips) {
 		}
 		cout << "Spin? (y/n): ";
 		cin >> spin;
+		system("cls");
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
 				cout << slot[i][j] << " ";
@@ -245,24 +247,36 @@ void slots(Login &x, int &chips) {
 			cout << endl;
 		}
 		if ((slot[0][0] == slot[0][1] && slot[0][0] == slot[0][2]) && (slot[1][0] == slot[1][1] && slot[1][0] == slot[1][2]) && (slot[2][0] == slot[2][1] && slot[2][0] == slot[2][2])) {
+			chips += 35000;
 			cout << "*** JACKPOT!!! ***" << endl;
 			cout << "*** JACKPOT!!! ***" << endl;
 			cout << "*** JACKPOT!!! ***" << endl;
 		}
 		else if ((slot[0][0] == slot[0][1] && slot[0][0] == slot[0][2]) && (slot[1][0] == slot[1][1] && slot[1][0] == slot[1][2])) {
+			chips += 500;
 			cout << "DOUBLE Win!!!" << endl;
 		}
 		else if ((slot[0][0] == slot[0][1] && slot[0][0] == slot[0][2]) && (slot[2][0] == slot[2][1] && slot[2][0] == slot[2][2])) {
+			chips += 500;
 			cout << "DOUBLE Win!!!" << endl;
 		}
 		else if ((slot[1][0] == slot[1][1] && slot[1][0] == slot[1][2]) && (slot[2][0] == slot[2][1] && slot[2][0] == slot[2][2])) {
+			chips += 500;
 			cout << "DOUBLE Win!!!" << endl;
 		}
 		else if ((slot[0][0] == slot[0][1] && slot[0][0] == slot[0][2]) || (slot[1][0] == slot[1][1] && slot[1][0] == slot[1][2]) || (slot[2][0] == slot[2][1] && slot[2][0] == slot[2][2])) {
+			chips += 100;
 			cout << "Win!!!" << endl;
 		}
 		else {
+			chips -= 5;
 			cout << "Loss..." << endl;
+		}
+
+		if (chips <= 0) {
+			cout << "You're out of chips." << endl;
+			system("pause");
+			break;
 		}
 	} while (spin == 'y');
 }
